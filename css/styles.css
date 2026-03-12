@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Serif", sans-serif;
+  /*     background: url("https://i.pinimg.com/originals/20/20/10/202010bab489db1cb502848f1400c088.gif");
+  background-size: auto 32%;
+	background-repeat: no-repeat; 
+	background-position: center; */
+  /*   z-index: 1;
+  opacity: 0.4; */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  text-align: center;
+  background: #1f1f2e;
+  background-image: url("https://thumbs.dreamstime.com/b/financial-stock-market-graph-technology-abstract-background-represent-stock-market-financial-analysis-technology-background-309541516.jpg?w=768");
+  background-size: auto 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*   background: red !important;  */
+  align-items: center;
+  min-height: 100vh;
+}
+
+#stocks {
+  background-image: url("https://i.pinimg.com/originals/0e/0b/b4/0e0bb4f25b5e778897ac4a26b56d5540.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-flow: row wrap;
+  opacity: 0.6;
+  justify-content: center;
+}
+h1 {
+  background: url("https://i.pinimg.com/originals/20/20/10/202010bab489db1cb502848f1400c088.gif");
+  background-size: auto 32%;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: maroon;
+  font-weight: bolder;
+  /* 	background-color: #205f9a; */
+  text-shadow:
+    2px 5px 0 #dd3333,
+    2px 3px 0 #ddd333,
+    8px 5px 12px #222,
+    8px 8px 22px #7bdae4;
+  /*   opacity: 0.4; */
+  align-self: flex-start;
+}
+
+footer {
+  color: #f6d57d;
+  font-weight: bolder;
+  padding: 0.5rem;
+  text-shadow:
+    -3px -2px 0 #888,
+    8px 5px 12px #222ddd;
+}
+/* h1 span {
+  display: inline-block;
+  background-image: url("https://i.pinimg.com/originals/46/d3/19/46d31916b537f90e8dc423c9244b00e7.gif");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  padding: 0 1rem; 
+  z-index: -1;
+} */
