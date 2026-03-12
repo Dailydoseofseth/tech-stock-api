@@ -1,0 +1,9 @@
+// API key from Financial Modeling Prep
+// This key allows us to access the stock market API
+
+//Jana
+// const apiKey = "5kajenyXj8BjQdFU3Wky3cB5bLmHOvML";
+//Seth
+// const apiKey = "aWDSHsfKRJrRgDepalVNcGG3j2FN6hbj";
+//Morgan
+// const apiKey = "gnX37xmwbMIikJPAufexgqh11Gc5WZog";

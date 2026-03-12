@@ -4,13 +4,15 @@
 //Jana
 // const apiKey = "5kajenyXj8BjQdFU3Wky3cB5bLmHOvML";
 //Seth
-// const apiKey = "aWDSHsfKRJrRgDepalVNcGG3j2FN6hbj";
+const apiKey = "aWDSHsfKRJrRgDepalVNcGG3j2FN6hbj";
 //Morgan
 // const apiKey = "gnX37xmwbMIikJPAufexgqh11Gc5WZog";
 
 // Array with the Magnificent 7 tech stocks
 // We will loop through this list and request data for each stock
 const techStocks = ["AAPL", "MSFT", "NVDA", "GOOGL", "AMZN", "META", "TSLA"];
+const stocks = document.querySelector("#stocks");
+const btn = document.querySelector("#btn");
 
 // FUNCTION 1: Make the API call
 // This function sends a request to the API to get stock data
@@ -82,9 +84,27 @@ function displayStock(symbol, data) {
 	`;
 }
 
-// LOOP THROUGH ALL TECH STOCK SYMBOLS
+////////////////THIS END VERSION///////////////////
+// ›››››› WITHOUT A BUTTON & EVENT-LISTENER ‹‹‹‹‹‹‹
+// LOOP THROUGH ALL TECH STOCK SYMBOLS & immediately RENDER
 // forEach goes through each item in the techStocks array
 // and calls getStockData for every stock
-techStocks.forEach((stock) => {
-  getStockData(stock, apiKey);
-});
+///////////////////////////////////////////
+// techStocks.forEach((stock) => {
+//   getStockData(stock, apiKey);
+// });
+///////////////////////////////////////////
+
+///////          or          //////
+
+////////////////////////////////////////
+const revealStocks = () => {
+  stocks.innerHTML = "";
+
+  techStocks.forEach((stock) => {
+    getStockData(stock, apiKey);
+  });
+};
+
+btn.addEventListener("click", revealStocks);
+
