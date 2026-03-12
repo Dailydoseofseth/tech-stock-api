@@ -7,3 +7,19 @@
 // const apiKey = "aWDSHsfKRJrRgDepalVNcGG3j2FN6hbj";
 //Morgan
 // const apiKey = "gnX37xmwbMIikJPAufexgqh11Gc5WZog";
+
+
+------
+btn.addEventListener("click", () => {
+  if (stocks.classList.contains("hide")) {
+    // Show container and load fresh data
+    stocks.classList.remove("hide");
+    stocks.innerHTML = ""; // clear old cards
+    loadStocks();
+    btn.textContent = "Hide Stocks";
+  } else {
+    // Hide container without fetching
+    stocks.classList.add("hide");
+    btn.textContent = "Click To Reveal";
+  }
+});

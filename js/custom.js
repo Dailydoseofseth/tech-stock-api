@@ -93,18 +93,20 @@ function displayStock(symbol, data) {
 // techStocks.forEach((stock) => {
 //   getStockData(stock, apiKey);
 // });
+
 ///////////////////////////////////////////
 
 ///////          or          //////
 
 ////////////////////////////////////////
+
 const revealStocks = () => {
-  stocks.innerHTML = "";
+  stocks.innerHTML = ""; // clear container before rendering
 
   techStocks.forEach((stock) => {
-    getStockData(stock, apiKey);
+    getStockData(stock, apiKey); // fetch & display each stock
   });
 };
 
+// Single button listener to render stocks
 btn.addEventListener("click", revealStocks);
-
